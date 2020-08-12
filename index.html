@@ -1,184 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Image Gallery</title>
-		<link rel="stylesheet" href="./base.css" />
-		<link rel="stylesheet" href="gallery.css" />
-	</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Image gallery</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="gallery.css">
+  </head>
+  <body>
+    <article>
+      <ul class="gallery">
+        <li>
+          <a
+            href="images/hondo.jpg"
+            data-title="Hondo Camping Chair"
+            data-description="Durable, Comfortable, and light-weight, Hondo Camping Chairs are an excellent companion for your next outdoors adventure"
+          >
+            <img src="images/thumbnails/hondo.jpg" alt="An aluminium camping chair made by Hondo">
+          </a>
+        </li>
+        <li>
+          <a
+            href="images/TNF-fanorak.png"
+            data-title="TNF Fanorak"
+            data-description="Stay cool and dry with Fanorak, by TNF"
+          >
+            <img src="images/thumbnails/TNF-fanorak.png" alt="A floral-accented anorak with a built-in hoodie.">
+          </a>
+        </li>
+        <li>
+          <a
+            href="images/ultra-boost.jpg"
+            data-title="Ultra Boost Shoes"
+            data-description="Sneakers for the modern athlete"
+          >
+            <img src="images/thumbnails/ultra-boost.jpg" alt="Black aerobic sneakers">
+          </a>
+        </li>
+        <li>
+          <a
+            href="images/vapormax.jpg"
+            data-title="Vapormax"
+            data-description="Activewear never looked so good before"
+          >
+            <img src="images/thumbnails/vapormax.jpg" alt="Sporty trainers">
+          </a>
+        </li>
+        <li>
+          <a
+            href="images/270-camo-sunset.jpg"
+            data-title="270 Camo - Sunset"
+            data-description="These stylish trainers are designed by our Swisss team, and made sustainably in Ethiopia"
+          >
+            <img src="images/thumbnails/270-camo-sunset.jpg" alt="Side view of a single sports shoe">
+          </a>
+        </li>
+        <li>
+          <a
+            href="images/canada-goose.jpg"
+            data-title="Canada Goose Weathercoat"
+            data-description="This down-lined weathercoat by Canada Goose is incredibly warm, and comfortable"
+          >
+            <img src="images/thumbnails/canada-goose.jpg" alt="Weathercoat">
+          </a>
+        </li>
+        <li>
+          <a
+            href="images/coral-yeti.jpg"
+            data-title="Coral Yeti Cooler Bin"
+            data-description="Coral's Yeti range of Cooler Bins are Waterproof, scratch-resistant, and perfectly insulated."
+          >
+            <img src="images/thumbnails/coral-yeti.jpg" alt="A man carrying his fishing gear and cooler bin walks back to the shore from the pier">
+          </a>
+        </li>
+        <li>
+          <a
+            href="images/kith-hoodie.jpg"
+            data-title="Kith Hoodie"
+            data-description="Feel right at home with Kith's All American™ coloured Hoodie."
+          >
+            <img src="images/thumbnails/kith-hoodie.jpg" alt="A studio photo of a comfortable hoodie">
+          </a>
+        </li>
+        <li>
+          <a
+            href="images/naked-and-famous-denim.jpg"
+            data-title="Naked and Famous, form-fitting denim"
+            data-description="Compliment your shape with Naked and Famous denim."
+          >
+            <img src="images/thumbnails/naked-and-famous-denim.jpg" alt="A close-up shot of the badge and belt-loops of a pair of denims">
+          </a>
+        </li>
+        <li>
+          <a
+            href="images/nudie-belt.jpg"
+            data-title="Nudie's Mens Belt"
+            data-description="Authentic cow-hide leather and an anodised Magnesium buckle."
+          >
+            <img src="images/thumbnails/nudie-belt.jpg" alt="A close up of a leather belt">
+          </a>
+        </li>
+        <li>
+          <a
+            href="images/patagonia black hole.jpg"
+            data-title="Patagonia Black Hole Pack"
+            data-description="This bag will swallow its contents like a singularity, not even the light will escape."
+          >
+            <img src="images/thumbnails/patagonia black hole.jpg" alt="A studio photo of a Patagonia black hole rucksack">
+          </a>
+        </li>
+        <li>
+          <a
+            href="images/rimowa.png"
+            data-title="Rimowa travel luggage"
+            data-description="Hardened luggage protects your valuable contents. Rimowa comes with a lifetime guarantee."
+          >
+            <img src="images/thumbnails/rimowa.png" alt="Promotional image of a Rimowa Travel Luggage item">
+          </a>
+        </li>
+      </ul>
+    </article>
+    <!-- <div class="modal">
+      <div class="modalInner">
+        <button aria-label="Previous Photo" class="prev">←</button>
+        <figure>
+          <img src="./images/kith-hoodie.jpg" />
+          <figcaption>
+            <h2>Test Title</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+              dignissimos obcaecati nisi placeat eaque voluptate, exercitationem
+              eius? Non, iusto provident itaque, voluptate labore a alias officia,
+              amet sunt pariatur praesentium tenetur voluptatibus dolores mollitia
+              quasi aliquid assumenda possimus maiores exercitationem!
+            </p>
+          </figcaption>
+        </figure>
+        <button class="next" aria-label="Next Photo">→</button>
+      </div>
+    </div> -->
 
-	<body>
-		<div class="galleries">
-			<div class="gallery gallery1">
-				<img
-					src="./images/hondo.jpg"
-					alt="Photo 1"
-					tabindex="0"
-					title="This is the title of the image"
-					data-description="This is the description of the image"
-				/>
-
-				<img
-					src="./images/kith-hoodie.jpg"
-					alt="Photo 1"
-					tabindex="0"
-					title="This is the title of the image"
-					data-description="This is the description of the image"
-				/>
-
-				<img
-					src="./images/naked-and-famous-denim.jpg"
-					alt="Photo 1"
-					tabindex="0"
-					title="This is the title of the image"
-					data-description="This is the description of the image"
-				/>
-
-				<img
-					src="./images/nudie-belt.jpg"
-					alt="Photo 1"
-					tabindex="0"
-					title="This is the title of the image"
-					data-description="This is the description of the image"
-				/>
-
-				<img
-					src="./images/patagonia black hole.jpg"
-					alt="Photo 1"
-					tabindex="0"
-					title="This is the title of the image"
-					data-description="This is the description of the image"
-				/>
-
-				<img
-					src="./images/rimowa.png"
-					alt="Photo 1"
-					tabindex="0"
-					title="This is the title of the image"
-					data-description="This is the description of the image"
-				/>
-
-				<img
-					src="./images/TNF-fanorak.png"
-					alt="Photo 1"
-					tabindex="0"
-					title="This is the title of the image"
-					data-description="This is the description of the image"
-				/>
-
-				<img
-					src="./images/ultra-boost.jpg"
-					alt="Photo 1"
-					tabindex="0"
-					title="This is the title of the image"
-					data-description="This is the description of the image"
-				/>
-
-				<img
-					src="./images/vapormax.jpg"
-					alt="Photo 1"
-					tabindex="0"
-					title="This is the title of the image"
-					data-description="This is the description of the image"
-				/>
-			</div>
-
-			<div class="gallery gallery2">
-				<img
-					src="./images/270-camo-sunset.jpg"
-					alt="Photo 1"
-					tabindex="0"
-					title="This is the title of the image"
-					data-description="This is the description of the image"
-				/>
-
-				<img
-					src="./images/canada-goose.jpg"
-					alt="Photo 1"
-					tabindex="0"
-					title="This is the title of the image"
-					data-description="This is the description of the image"
-				/>
-
-				<img
-					src="./images/coral-yeti.jpg"
-					alt="Photo 1"
-					tabindex="0"
-					title="This is the title of the image"
-					data-description="This is the description of the image"
-				/>
-
-				<img
-					src="./images/hondo.jpg"
-					alt="Photo 1"
-					tabindex="0"
-					title="This is the title of the image"
-					data-description="This is the description of the image"
-				/>
-
-				<img
-					src="./images/kith-hoodie.jpg"
-					alt="Photo 1"
-					tabindex="0"
-					title="This is the title of the image"
-					data-description="This is the description of the image"
-				/>
-
-				<img
-					src="./images/naked-and-famous-denim.jpg"
-					alt="Photo 1"
-					tabindex="0"
-					title="This is the title of the image"
-					data-description="This is the description of the image"
-				/>
-
-				<img
-					src="./images/nudie-belt.jpg"
-					alt="Photo 1"
-					tabindex="0"
-					title="This is the title of the image"
-					data-description="This is the description of the image"
-				/>
-
-				<img
-					src="./images/patagonia black hole.jpg"
-					alt="Photo 1"
-					tabindex="0"
-					title="This is the title of the image"
-					data-description="This is the description of the image"
-				/>
-
-				<img
-					src="./images/rimowa.png"
-					alt="Photo 1"
-					tabindex="0"
-					title="This is the title of the image"
-					data-description="This is the description of the image"
-				/>
-			</div>
-
-			<div class="modal">
-				<div class="modalInner">
-					<button aria-label="Previous Photo" class="prev">←</button>
-					<figure>
-						<img src="./images/kith-hoodie.jpg" />
-						<figcaption>
-							<h2>Test Title</h2>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-								dignissimos obcaecati nisi placeat eaque voluptate, exercitationem
-								eius? Non, iusto provident itaque, voluptate labore a alias officia,
-								amet sunt pariatur praesentium tenetur voluptatibus dolores mollitia
-								quasi aliquid assumenda possimus maiores exercitationem!
-							</p>
-						</figcaption>
-					</figure>
-					<button class="next" aria-label="Next Photo">→</button>
-				</div>
-			</div>
-		</div>
-
-		<script src="./gallery.js"></script>
-	</body>
-</html>
+<script src="gallery.js" defer async></script>
