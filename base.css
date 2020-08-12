@@ -1,11 +1,22 @@
 html {
-  background-color: blue;
+  
 }
+
 body {
-	max-width: 1000px;
-	margin: 4rem auto;
-	padding: 2rem;
+  background-color: #0072b9;
+  padding: 2rem;
+}
+
+article {
+  max-width: 1000px;
+  margin: 4rem auto;
+  padding: 2rem;
   background-color: white;
-  box-shadow: 0 0 3px 5px rgba(0, 0, 0, 0.08653);
+  color: #333;
+  box-shadow: 0 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+img {
+  max-width: 100%;
 }
 

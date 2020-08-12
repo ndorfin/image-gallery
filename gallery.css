@@ -15,6 +15,7 @@
   width: 100%;
   object-fit: cover;
   border: 1px solid black;
+  box-sizing: border-box;
 }
 
 .gallery a {
